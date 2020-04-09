@@ -1,0 +1,89 @@
+
+body{
+    background: #3b6978;
+}
+
+#menu{
+    margin:60px;
+    width:110px;
+    height:45px;
+    cursor: pointer;
+}
+
+.bar{
+    width: 100%;
+    height: 10px;
+    background:#ffd31d;
+    display: block;
+    border-radius: 5px;
+    transition: all .4s ease;
+
+}
+
+#bar-1{
+    transform: translateY(-10px);
+}
+
+#bar-3{
+    transform: translateY(10px);
+}
+
+.nav li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav li a:hover{
+    font-weight: bold;
+    font-size:1.5rem;
+}
+
+.nav li{
+    list-style: none;
+    padding:16px 0;
+}
+
+.nav{
+    margin: 0 20px;
+    /* padding:0; */
+    transition: .4 ease;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ######################## Change ################# */
+
+
+.change .bar{
+    background: white;
+}
+
+.change #bar-1{
+    transform: translateY(10px) rotate(-45deg);
+}
+
+
+.change #bar-3{
+    transform: translateY(-10px) rotate(45deg);
+}
+
+.change #bar-2{
+    opacity: 0;
+}
+
+.change{
+    display: block;
+}
+
+
+
