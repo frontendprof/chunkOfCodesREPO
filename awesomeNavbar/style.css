@@ -109,7 +109,6 @@ nav a{
 
 nav a:hover{
     color:blue;
-    font-size: 1.3rem;
 }
 
 
@@ -120,4 +119,80 @@ nav a:hover{
 
 .nav-toggle:checked ~ nav a{
     opacity: 1;
+    
+}
+
+@media screen and (min-width:800px){
+    .nav-toggle-label{
+        display: none;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px,3fr) 1fr;
+    }
+
+    .logo{
+        grid-column: 2/3;
+    }
+
+    nav{
+        all:unset;
+        grid-column: 3/4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul{
+        display: flex;
+    }
+
+    nav li{
+        margin-left:3rem;
+        margin-bottom: 0;
+    }
+
+    nav a{
+        opacity: 1;
+        position: relative;
+    }
+
+    nav a::before{
+        content:"";
+        display: block;
+        height: 5px;
+        background: yellow;
+        position: absolute;
+        top:-.5rem;
+        left:0;
+        right:0;
+        transform: scale(0,1);
+        transform-origin: left;
+        transition: transform .75s ease-in-out;
+    }
+
+    nav a::after{
+        content:"";
+        display: block;
+        height: 5px;
+        background: yellow;
+        position: absolute;
+        bottom:-.5rem;
+        left:0;
+        right:0;
+        transform: scale(0,1);
+        transform-origin: right;
+        transition: transform .75s ease-in-out;
+    }
+
+    nav a:hover::before{
+        transform: scale(1,1);
+    }
+
+    nav a:hover::after{
+        transform: scale(1,1);
+    
+
+    
 }
