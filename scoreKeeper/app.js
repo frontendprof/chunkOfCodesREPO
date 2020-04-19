@@ -14,6 +14,8 @@ let gameOver=false;
 let winningScore=5;
 
 let resetBtn=document.getElementById("reset");
+let inputVal=document.querySelector("input");
+let scoreVal=document.querySelector("h4 span");
 
 p1Button.addEventListener("click",function(){
     if(!gameOver){
@@ -47,4 +49,12 @@ function resetPage(){
     valueTwo.textContent=0;
     valueOne.classList.remove("changeCol");
     valueTwo.classList.remove("changeCol");
+    gameOver=false;
 }
+
+inputVal.addEventListener("change",function(){
+    scoreVal.textContent=this.value;
+    winningScore=Number(this.value);
+    resetPage();
+
+})
