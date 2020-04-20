@@ -8,7 +8,7 @@
 }
 
 body{
-    background: url("music-1.jpeg") center/cover fixed no-repeat;
+    background: url("office.jpeg") center/cover fixed no-repeat;
     box-sizing: border-box;
     font-family: sans-serif;
 }
@@ -87,6 +87,22 @@ body{
 }
 
 
+.fa-angle-right{
+    float: right;
+}
+
+
+.sub-menu-2{
+    display: none;
+}
+
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 120px;
+    background: rgb(0,100,0);
+}
 
 
 
