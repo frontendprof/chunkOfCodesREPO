@@ -2,5 +2,12 @@
 
 li{
     display: flex;
+    font-size: 2rem;
     
+}
+
+
+.colored{
+    color:darkgreen;
+    opacity:.6rem;
 }
