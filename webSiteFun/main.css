@@ -1,0 +1,12 @@
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url("music-1.jpeg") center/cover fixed no-repeat;
+}
