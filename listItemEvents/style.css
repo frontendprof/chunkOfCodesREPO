@@ -1,13 +1,30 @@
 
 
+body{
+    background-color: pink;
+}
+
+ul{
+    margin:5rem auto;
+    text-align: center;
+    justify-content: center;
+}
+
 li{
-    display: flex;
+    
     font-size: 2rem;
+    color:darkblue;
     
 }
 
 
 .colored{
     color:darkgreen;
-    opacity:.6rem;
+    opacity:.6;
+}
+
+
+.colorless{
+    text-decoration: line-through;
+    opacity:.3;
 }
