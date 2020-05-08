@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(173, 174, 230);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.demo-link{
+    font-size: 1.8rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    position:relative;
+    color:rgb(228, 96, 82);
+    margin-right: 5rem;
+}
+
+.demo-link::before,
+.demo-link::after{
+    content: "";
+    position: absolute;
+    left:25%;
+    background-color: gold;
+    width: 50%;
+    height: 4px;
+    transform: scaleX(0);
+    transition: transform .3s linear;
+    transform-origin: left;
+}
+
+.demo-link::before{
+    top:-10px;
+    transform-origin: left;
+}
+
+.demo-link::after{
+    bottom:-10px;
+    transform-origin: right;
+}
+
+.demo-link:hover::before,
+.demo-link:hover::after{
+    transform: scaleX(1);
+}
